@@ -9,7 +9,7 @@ import { environment } from '../environments/environment';
 })
 export class EmployeeService {
   // private baseURL = 'http://localhost:8080/api/v1/employees';
-  private baseURL = '${environment.apiBaseUrl}/api/v1/employees';
+  private baseURL = environment.apiBaseUrl + '/api/v1/employees';
 
   constructor(private httpClient: HttpClient) {}
 
